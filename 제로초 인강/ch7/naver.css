@@ -292,8 +292,10 @@ nav li.more:first-child span:first-child {
 
 #search-ranking {
   position: absolute;
-  top: 16px;
-  right: 100px;
+  top: 14px;
+  right: 0;
+  width: 198px;
+  height: 20px;
 }
 
 #rank-number {
@@ -348,12 +350,12 @@ main {
   margin-bottom: 8px;
 }
 
-#main-second-block .inline-block:first-child {
+#main-second-block .float-left:first-child {
   width: 740px;
   margin-right: 8px;
 }
 
-#main-second-block .inline-block:last-child {
+#main-second-block .float-left:last-child {
   width: 332px;
   vertical-align: top;
 }
@@ -394,7 +396,7 @@ main {
 
 #main-newsstand li {
   float: left;
-  width: 123px;
+  width: calc(100% / 6);
   height: 67px;
   border-right: 1px solid #f1f3f6;
   border-bottom: 1px solid #f1f3f6;
@@ -427,7 +429,7 @@ main {
 #main-category {
   float: left;
   width: 740px;
-  height: 837px;
+  height: 882px;
   background: white;
   margin-bottom: 8px;
   margin-right: 8px;
@@ -435,7 +437,7 @@ main {
 
 #main-shopping {
   float: left;
-  width: 332px;
+  width: 30px;
   height: 882px;
   background: white;
   margin-bottom: 8px;
