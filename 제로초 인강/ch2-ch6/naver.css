@@ -37,6 +37,18 @@ body {
   width: 1080px;
 }
 
+#header-top {
+  float: right;
+}
+
+#header-top span:first-child {
+  color: #888;
+  letter-spacing; -1px;
+  font-size: 11px;
+  line-height: 22px;
+}
+
+
 #header-search a {
   text-decoration: none;
 }
