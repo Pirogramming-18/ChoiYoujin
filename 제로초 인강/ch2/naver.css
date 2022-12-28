@@ -1,5 +1,10 @@
 /* 선택자 (selector) */
 
+* {
+  /* 모두 적용 */
+  box-sizing: border-box;
+}
+
 .blind {
   position: absolute;
   overflow: hidden;
@@ -28,6 +33,7 @@
   background: url(./sp_search.png) -4px -10px no-repeat;
   /* text-indent: 100%;
   overflow: hidden; */
+  vertical-align: middle;
 }
 
 #header-search h1 span {
@@ -44,7 +50,14 @@
   width: 521px;
   height: 49px;
   display: inline-block; /* inline은 컨텐츠 한 줄만 */
-  border: 2px solid #03cf5d;
+  border: 2px solid #03cf5d; /* hex */
+}
+
+#header-search fieldset input {
+  border: none;
+  padding: 0;
+  outline: none;
+  vertical-align: middle;
 }
 
 /*
