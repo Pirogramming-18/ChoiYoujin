@@ -107,7 +107,7 @@ header {
   padding: 0;
   outline: none;
   vertical-align: top;
-  width: 405px;
+  width: 395px;
   height: 23px;
 }
 
@@ -120,6 +120,28 @@ header {
   position: absolute;
   right: -2px;
   top: -2px;
+}
+
+#search-keyboard {
+  background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+  background-repeat: no-repeat;
+  background-position: -33px -60px;
+  width: 19px;
+  height: 11px;
+  display: inline-block;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+#search-history {
+  background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
+  background-repeat: no-repeat;
+  background-position: -87px -60px;
+  width: 9px;
+  height: 4px;
+  display: inline-block;
+  margin: 0 6px;
+  vertical-align: middle;
 }
 
 #search-image {
@@ -188,6 +210,11 @@ nav li:nth-child(6) span:first-child {
   background-position: -70px -285px;
 }
 
+nav li:nth-child(7) span:first-child {
+  width: 39px;
+  background-position: -125px -130px;
+}
+
 .nav-divider {
   display: inline-block;
   margin: 18px 16px 0;
@@ -208,6 +235,14 @@ nav li:nth-child(6) span:first-child {
   font-size: 16px;
 }
 
+main {
+  background: #f2f4f7;
+  overflow: auto;
+}
+
+main h3:nth-of-type(3) {
+  background: red;
+}
 /*
 #header-center h1 {
     자손 선택자 (자식은 바로 아래 들어있는 것만)
