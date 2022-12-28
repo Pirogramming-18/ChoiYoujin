@@ -3,5 +3,25 @@
 #header-center {
   /* div만 생략 가능 */
   margin: 0 auto;
-  width: 1090px;
+  width: 1080px;
 }
+
+#header-search > h1 {
+  width: 280px;
+  display: inline-block;
+}
+
+#header-search h2 {
+  display: none;
+}
+
+#header-search fieldset {
+  width: 520px;
+  display: inline-block; /* inline은 컨텐츠 한 줄만 */
+}
+
+/*
+#header-center h1 {
+    자손 선택자 (자식은 바로 아래 들어있는 것만)
+} 
+*/
