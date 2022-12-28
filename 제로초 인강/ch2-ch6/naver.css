@@ -182,7 +182,7 @@ nav li span:first-child {
   display: inline-block;
   background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
   background-repeat: no-repeat;
-  margin-left: 14px;
+  margin-left: 10px;
 }
 
 nav li:nth-child(2) span:first-child {
@@ -211,7 +211,7 @@ nav li:nth-child(6) span:first-child {
 }
 
 nav li:nth-child(7) span:first-child {
-  width: 39px;
+  width: 35px;
   background-position: -125px -130px;
 }
 
@@ -237,12 +237,10 @@ nav li:nth-child(7) span:first-child {
 
 main {
   background: #f2f4f7;
-  overflow: auto;
+  display: inline-block;
+  width: 100%;
 }
 
-main h3:nth-of-type(3) {
-  background: red;
-}
 /*
 #header-center h1 {
     자손 선택자 (자식은 바로 아래 들어있는 것만)
