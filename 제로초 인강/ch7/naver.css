@@ -1,7 +1,6 @@
 /* 선택자 (selector) */
 
 * {
-  /* 모두 적용 */
   box-sizing: border-box;
 }
 
@@ -31,7 +30,7 @@ h6 {
 
 #fixed {
   position: fixed;
-  top: 50px;
+  bottom: 50px;
   right: 50px;
   display: inline-block;
   width: 100px;
@@ -40,6 +39,8 @@ h6 {
   border-radius: 50px;
 }
 
+/* Cascading Style Sheet */
+/* 선택자(selector) */
 .blind {
   position: absolute;
   overflow: hidden;
@@ -54,7 +55,6 @@ h6 {
 }
 
 .center-align {
-  /* div만 생략 가능 */
   margin: 0 auto;
   width: 1080px;
 }
@@ -77,7 +77,7 @@ header {
 
 #header-search {
   clear: both;
-  padding-top: 20px;
+  padding-top: 45px;
 }
 
 #header-search a {
@@ -88,12 +88,10 @@ header {
   width: 198px;
   height: 48px;
   display: inline-block;
-  /* background-image: url(./sp_search.png);
-  background-position: -4px -10px;
-  background-repeat: no-repeat; */
+  /*background-image: url(./sp_search.png);*/
+  /*background-position: -4px -10px;*/
+  /*background-repeat: no-repeat;*/
   background: url(./sp_search.png) -4px -4px no-repeat;
-  /* text-indent: 100%;
-  overflow: hidden; */
   vertical-align: middle;
   position: relative;
   top: -5px;
@@ -109,11 +107,15 @@ header {
 }
 
 #header-search fieldset {
-  margin-left: 20px;
-  padding: 12px 0 12px 10px; /* 위, 오른쪽, 아래, 왼쪽 */
+  margin-left: 18px;
+  /*padding-top: 12px;*/
+  /*padding-bottom: 12px;*/
+  /*padding-left: 10px;*/
+  /*padding-right: 0;*/
+  padding: 12px 0 12px 10px;
   width: 521px;
   height: 49px;
-  display: inline-block; /* inline은 컨텐츠 한 줄만 */
+  display: inline-block;
   border: 2px solid #03cf5d; /* hex */
   vertical-align: middle;
   position: relative;
@@ -345,7 +347,7 @@ nav ul {
 }
 
 main {
-  background: #f2f4f7;
+  background-color: #f2f4f7;
   display: inline-block;
   width: 100%;
 }
@@ -377,6 +379,40 @@ main {
   vertical-align: top;
   background-color: white;
   margin-bottom: 8px;
+}
+
+#main-login .login-wrapper {
+  padding: 15px 25px;
+}
+
+#main-login .login-wrapper a {
+  display: block;
+}
+
+#main-login .login-text {
+  color: #888;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+#main-login .login-image {
+  margin-top: 12px;
+  background: url(./sp_login.png) 0 -47px no-repeat;
+  display: inline-block;
+  width: 280px;
+  height: 37px;
+}
+
+#main-login .login-signup {
+  float: right;
+  font-size: 12px;
+  line-height: 38px;
+  color: #666;
+  text-decoration: none;
+}
+
+#main-login .login-signup:hover {
+  text-decoration: underline;
 }
 
 #main-second-block {
@@ -472,7 +508,7 @@ main {
 
 #main-shopping {
   float: left;
-  width: 30px;
+  width: 330px;
   height: 882px;
   background: white;
   margin-bottom: 8px;
@@ -501,7 +537,7 @@ main {
 
 #main-third-ad {
   float: left;
-  width: 332px;
+  width: 330px;
   height: 130px;
   background: #555;
 }
