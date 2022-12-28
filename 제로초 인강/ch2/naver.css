@@ -1,0 +1,7 @@
+/* 선택자 (selector) */
+
+#header-center {
+  /* div만 생략 가능 */
+  margin: 0 auto;
+  width: 1090px;
+}
