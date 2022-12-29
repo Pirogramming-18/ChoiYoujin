@@ -1,33 +1,3 @@
-/* 선택자 (selector) */
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Dotum, "돋움", Helvetica, "Apple SD Gothic Neo", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.float-left {
-  float: left;
-}
-
 #fixed {
   position: fixed;
   bottom: 50px;
@@ -39,7 +9,6 @@ h6 {
   border-radius: 50px;
 }
 
-/* Cascading Style Sheet */
 /* 선택자(selector) */
 .blind {
   position: absolute;
@@ -431,6 +400,16 @@ main {
   vertical-align: top;
 }
 
+#main-ytn h3,
+#main-newsstand h3 {
+  font-size: 14px;
+  font-family: NanumSquare, Dotum, "돋움", Helvetica, AppleSDGothicNeo,
+    sans-serif;
+  padding-top: 15px;
+  padding-left: 15px;
+  vertical-align: top;
+}
+
 #main-ytn {
   display: inline-block;
   width: 740px;
@@ -500,7 +479,7 @@ main {
 #main-category {
   float: left;
   width: 740px;
-  height: 882px;
+  height: 884px;
   background: white;
   margin-bottom: 8px;
   margin-right: 8px;
@@ -509,7 +488,7 @@ main {
 #main-shopping {
   float: left;
   width: 330px;
-  height: 882px;
+  height: 884px;
   background: white;
   margin-bottom: 8px;
 }
@@ -517,6 +496,10 @@ main {
 #main-shopping iframe {
   width: 100%;
   height: 100%;
+  border: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 #main-third-block,
@@ -540,6 +523,124 @@ main {
   width: 330px;
   height: 130px;
   background: #555;
+}
+
+#main-category-top {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #ebeef3;
+}
+
+#subject-list,
+#subject-all,
+#subject-prev,
+#subject-next {
+  float: left;
+  height: 45px;
+  padding: 0;
+}
+
+#subject-list {
+  width: 603px;
+  position: relative;
+}
+
+#subject-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 45px;
+  width: 700px;
+}
+
+#subject-list li {
+  float: left;
+  margin-right: 10px;
+  padding: 14px 7px 0;
+  font-size: 14px;
+  font-family: NanumSquare, Dotum, "돋움", Helvetica, AppleSDGothicNeo,
+    sans-serif;
+}
+
+.opacity {
+  opacity: 0.5;
+  background: white;
+}
+
+.opacity.left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 45px;
+  width: 15px;
+}
+
+.opacity.right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 45px;
+  width: 15px;
+}
+
+#subject-list li.highlight {
+  border-bottom: 3px solid #00c73c;
+  color: #00b336;
+  font-weight: 700;
+  height: 45px;
+}
+
+#subject-all {
+  border-right: 1px solid #ebeef3;
+}
+
+#subject-all,
+#subject-prev,
+#subject-next {
+  position: relative;
+  width: 45px;
+  border: none;
+  border-left: 1px solid #ebeef3;
+  background: white;
+}
+
+#subject-all span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 20px;
+  height: 14px;
+  background-image: url(./sp_themecast.png);
+  background-repeat: no-repeat;
+  background-position: -218px -257px;
+}
+
+#subject-prev span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 8px;
+  height: 16px;
+  background-image: url(./sp_themecast.png);
+  background-repeat: no-repeat;
+  background-position: -320px 0;
+}
+
+#subject-next span:last-child {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 8px;
+  height: 16px;
+  background-image: url(./sp_themecast.png);
+  background-repeat: no-repeat;
+  background-position: -320px -52px;
+}
+
+section {
+  border: 1px solid #dee3eb;
 }
 
 /*
