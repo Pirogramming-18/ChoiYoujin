@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <script
+      src="https://kit.fontawesome.com/5f2d670c2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bootstrap Demo</title>
+  </head>
+  <body>
+    <!-- navbar START -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Pirogramming</a>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-3">
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Youjin Choi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#intro"
+                  >Intro</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#highlights">Highlights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="btn btn-outline-info"
+              data-bs-toggle="modal"
+              data-bs-target="#about-modal"
+            >
+              About
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar END -->
+    <main>
+      <!-- start-home START -->
+      <section id="start-home" class="d-flex align-items-center">
+        <div class="container">
+          <!-- fluid:width100%-->
+          <div class="row d-flex justify-content-center">
+            <div class="start-home text-center">
+              <h1>Pirogramming18</h1>
+              <h5>Cheer up</h5>
+              <hr />
+              <button type="button" class="btn btn-primary">
+                <a href="#intro" class="link-light">Get Started</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- start-home END -->
+      <!-- intro START -->
+      <section id="intro" class="d-flex align-items-center bg-secondary">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="intro text-center col-8">
+              <h1 class="text-danger">Built On The Bootstrap Grid</h1>
+              <h5 class="text-white py-3">
+                Bootstrap's responsive grid comes in 4 sizes or "breakpoints":
+                tiny (xs), small(sm), medium(md) and large(lg). These 4 grid
+                cites enables you create responsive layouts that behave
+                accordingly on different sizes.
+              </h5>
+              <button type="button" class="btn btn-light">
+                <a href="#gallery" class="link-dark">Learn More</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- intro END -->
+      <!-- highlights START -->
+      <section id="highlights" class="bg-secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="margin-top-0 text-primary">Flexible Layouts</h2>
+              <hr />
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="description text-white">
+                <i class="fa-solid fa-desktop fa-7x"></i>
+                <h3>Responsive</h3>
+                <p>Your site looks good everywhere</p>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="description text-white">
+                <i class="fa-solid fa-check-double fa-7x"></i>
+                <h3>Customizable</h3>
+                <p>Easy to theme and customize with SaaS</p>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center">
+              <div class="description text-white">
+                <i class="fa-solid fa-star fa-7x"></i>
+                <h3>Consistent</h3>
+                <p>A mature, well-tested, stable codebase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- highlights END -->
+      <!-- gallery START -->
+      <section id="gallery" class="bg-secondary pb-5">
+        <div class="container-fluid d-flex flex-column pb-5">
+          <div class="row d-flex justify-content-center mt-5">
+            <div
+              class="gallery__photo col-3 d-flex flex-column align-items-center"
+            >
+              <img src="https://picsum.photos/seed/4/300/300" alt="" />
+            </div>
+            <div
+              class="gallery__photo col-3 d-flex flex-column align-items-center"
+            >
+              <img src="https://picsum.photos/seed/16/300/600" alt="" />
+            </div>
+            <div
+              class="gallery__photo col-3 d-flex flex-column align-items-center"
+            >
+              <img src="https://picsum.photos/seed/18/700/500" alt="" />
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center mt-5">
+            <div
+              class="gallery__photo col-3 d-flex flex-column align-items-center"
+            >
+              <img src="https://picsum.photos/seed/10/300/600" alt="" />
+            </div>
+            <div
+              class="gallery__photo col-3 d-flex flex-column align-items-center"
+            >
+              <img src="https://picsum.photos/seed/8/300/500" alt="" />
+            </div>
+            <div
+              class="gallery__photo col-3 d-flex flex-column align-items-center"
+            >
+              <img src="https://picsum.photos/seed/3/300/600" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- gallery END -->
+      <!-- contact START -->
+      <section id="contact" class="bg-secondary pt-5">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="text-primary">Get in Touch</h2>
+              <hr />
+            </div>
+            <div class="col-lg-10 text-center">
+              <form class="contact-form row">
+                <div class="col-lg-4">
+                  <label></label>
+                  <input type="text" class="form-control" placeholder="Name" />
+                </div>
+                <div class="col-lg-4">
+                  <label></label>
+                  <input type="text" class="form-control" placeholder="Email" />
+                </div>
+                <div class="col-lg-4">
+                  <label></label>
+                  <input type="text" class="form-control" placeholder="Phone" />
+                </div>
+                <div class="col-lg-12">
+                  <label></label>
+                  <textarea
+                    class="form-control"
+                    rows="9"
+                    placeholder="Your message here.."
+                  ></textarea>
+                </div>
+                <!-- 수평 중앙 배치: mx-auto-->
+                <div class="d-grid col-4 mx-auto pt-3 pb-5">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#send-modal"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact END -->
+    </main>
+
+    <!-- footer START -->
+    <footer class="bg-dark py-4">
+      <div class="container-fluid">
+        <div class="row justify-content-around">
+          <div class="col-12 col-lg-3 col-md-6 column">
+            <h4 class="text-info">Information</h4>
+            <ul class="list-unstyled text-white">
+              <li class>Products</li>
+              <li>Services</li>
+              <li>Benefits</li>
+              <li>Developers</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6 column">
+            <h4 class="text-info">About</h4>
+            <ul class="list-unstyled text-white">
+              <li>Contact Us</li>
+              <li>Delivery Information</li>
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 column">
+            <h4 class="text-info">Stay Posted</h4>
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  title="text-message"
+                  placeholder="Tell me your email"
+                />
+              </div>
+              <div class="form-group">
+                <button
+                  class="btn btn-primary mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#send-modal"
+                  type="button"
+                >
+                  Subscribe for Updates
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="send-modal" class="modal fade">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h5 class="modal-title text-center">Nice Job!</h5>
+              <hr />
+              <p class="text-center">
+                You clicked the button, but it doesn't actually go anywhere.
+              </p>
+              <p class="text-center">
+                <a href="https://getbootstrap.kr/">Learn more at Bootstrap</a>
+              </p>
+              <br />
+            </div>
+            <div class="modal-footer col-12">
+              <button
+                type="button"
+                class="btn-primary btn-lg mx-auto col"
+                data-bs-dismiss="modal"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="about-modal">
+        <div class="modal-dialog">
+          <div class="modal-content text-center bg-secondary">
+            <div class="modal-header text-white">
+              <h5 class="modal-title">피로그래밍 18기</h5>
+            </div>
+            <div class="modal-body text-white">
+              <h5>파이팅!!</h5>
+              <p>
+                모두들 아르샤 하느라 수고 많으셨습니다
+                <br />
+                힘들더라도 계속해서 달려봐요!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a href="">Download</a>
+              <button
+                type="button"
+                class="btn btn-info"
+                data-bs-dismiss="modal"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer END -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
