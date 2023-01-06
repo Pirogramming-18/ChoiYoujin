@@ -27,3 +27,10 @@ while num < 31:
       print(player + " : " + str(num))
       if num == 31:
         break
+
+if player == player2:
+    player = player1
+    print(player,"win!")
+else:
+    player = player2
+    print(player,"win!")
