@@ -8,15 +8,21 @@ class NotInRangeError(Exception):
   def __init__(self):
     super().__init__('1,2,3 중 하나를 입력하세요')
 
-while num < 31:
+def SwitchTurn():
+  global player
+  if player == player2:
+    player = player1
+  else:
+    player = player2
+
+def brGame():
+  global player
+  global num
   try:
     num_input=int(input("부를 숫자의 개수를 입력하세요(1, 2, 3만 입력 가능) : "))
     if num_input not in range(1,4):
       raise NotInRangeError
-    if player == player2:
-      player = player1
-    else:
-      player = player2
+    SwitchTurn()
   except ValueError:
     print("정수를 입력하세요")
   except NotInRangeError:
@@ -28,9 +34,9 @@ while num < 31:
       if num == 31:
         break
 
-if player == player2:
-    player = player1
-    print(player,"win!")
-else:
-    player = player2
-    print(player,"win!")
+while num < 31:
+  brGame()
+
+SwitchTurn()
+
+print(player,"win!")
