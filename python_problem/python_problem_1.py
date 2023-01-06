@@ -14,4 +14,7 @@ while True:
   except NotInRangeError:
     print("1,2,3 중 하나를 입력하세요")
   else:
+    for i in range(0,num_input):
+      num = num + 1
+      print("PlayerA : " + str(num))
     break
