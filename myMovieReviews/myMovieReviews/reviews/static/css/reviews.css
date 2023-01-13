@@ -1,0 +1,44 @@
+html,
+body {
+  background-color: white;
+  height: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.page-header {
+  border-bottom: 1px solid black;
+}
+
+.page-header a {
+  font-weight: 550;
+}
+
+th {
+  padding-right: 2rem;
+}
+
+th,
+td {
+  padding-bottom: 1rem;
+}
+
+.movie-form-title {
+  padding-bottom: 2rem;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.content_box {
+  color: black;
+  background-color: lightgray;
+}

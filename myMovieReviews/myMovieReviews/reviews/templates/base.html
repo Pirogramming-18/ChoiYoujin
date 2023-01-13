@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=divice-width" />
+    <title>영화 리스트</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/cyborg/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/reviews.css' %}"
+    />
+  </head>
+  <body>
+    <div
+      class="page-header d-flex flex-row justify-content-between px-5 py-3 align-items-center"
+    >
+      <h4><a href="{% url 'reviews:list' %}">my Movie reviews</a></h4>
+      <h5><a href="{% url 'reviews:create' %}">Add a New review</a></h5>
+    </div>
+
+    <div class="container">
+      <div class="d-flex justify-content-center flex-wrap">
+        {% block content %} {% endblock %}
+      </div>
+    </div>
+  </body>
+</html>

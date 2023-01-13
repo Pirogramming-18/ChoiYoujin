@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container px-2 py-2">
+  <div class="d-flex flex-row justify-content-between mt-2">
+    <ul>
+      <h4 class="text-dark">{{ review.title }}</h4>
+    </ul>
+    <ul>
+      <a href="{% url 'reviews:update' review.id %}">수정</a>
+
+      <a href="{% url 'reviews:delete' review.id %}">삭제</a>
+    </ul>
+  </div>
+  <div class="row content_box px-3 py-3">
+    <p>개봉년도 {{ review.releasedate }}</p>
+    <p>감독 {{ review.director }}</p>
+    <p>배우 {{ review.cast }}</p>
+    <p>장르 {{ review.genre }}</p>
+    <p>별점 {{ review.score }}</p>
+    <p>러닝타임 {{ review.runtime }}</p>
+    <p>{{ review.review | linebreaksbr }}</p>
+
+    <!-- 여기서 list는 views에서 views.post_list -> list -->
+    <!-- posts는 views에서 app name -->
+  </div>
+</div>
+{% endblock %}

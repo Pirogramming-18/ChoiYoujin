@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %} {%for review in reviews%}
+<div class="container content_box m-3 col-12 col-lg-3">
+  <div class="row px-3 py-4">
+    <h3 class="pb-5">
+      <a href="{% url 'reviews:detail' pk=review.pk %}">{{ review.title }}</a>
+    </h3>
+    <p>개봉 년도 {{review.releasedate}}</p>
+    <p>장르 {{review.genre}}</p>
+    <p>별점 {{review.score}}</p>
+  </div>
+</div>
+{%endfor%} {% endblock %}
