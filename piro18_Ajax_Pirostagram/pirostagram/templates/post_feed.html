@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}PIROSTAGRAM{% endblock %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/post_feed.css' %}">
+<script defer type="text/javascript" src="{% static 'js/post.js' %}"></script>
+{% endblock %}
+{% block content %}
+<div class="posts__container">
+    {% for post in posts %}
+    <div class="post">
+        <p>{{post.0.writer.username}}</p>
+        <div class="content__container">
+            <div class="img__container">
+                {% if post.0.content_img %}
+                <img src="{{post.0.content_img.url}}" height=560" width="560">
+                {% else %}
+                <img src="https://picsum.photos/seed/1/160/220?">
+                {% endif %}
+            </div>
+            
+            <div class="main-content__container">
+                <p>{{post.0.content}}</p>
+                <div class="buttons__container">
+                    <button class="like_button post-id-{{post.0.id}}" onclick='postLike({{post.0.id}}, {{current_user.id}})'>
+                            {% if post.3 %}
+                            <i class="fas fa-heart"></i>
+                            {% else %}
+                            <i class="far fa-heart"></i>
+                            {% endif %}
+                    </button>
+                </div>
+                <a  href="{% url 'pirostagram:post_detail' pk=post.0.id %}">댓글 {{post.1}}개 모두 보기</a>                
+                <p class="post-id-{{post.0.id}}"><span>{{post.2}}</span>개의 좋아요</p>
+                <div class="comments__container">
+                    <form action="{% url 'pirostagram:post_detail' post.0.id %}" method="POST" >
+                        <input name = 'comment' type="text" placeholder="댓글 달기...">
+                        <button type="submit">게시</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+.posts__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px #262626;
+  border: 1px solid #262626;
+  margin: 1rem 5rem;
+  border-radius: 5px;
+}
+
+.content__container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
